@@ -10,6 +10,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 tools:
   github:
     toolsets: [repos]
@@ -30,11 +31,13 @@ Keep Mona's GitHub Info website current with useful, official GitHub updates.
 1. Use GitHub repository API tools to read `notes/mona-notes.md` and the current
    `site/content/github-info.md`. Do not use terminal, CLI, or sandboxed commands
    to read repository guidance or reference files.
-2. Use `web-fetch` to read `https://github.blog/latest/` and
-   `https://github.blog/changelog/`.
+2. Use `web-fetch` to read `https://github.blog/latest/`,
+  `https://github.blog/changelog/`, and
+  `https://awesome-copilot.github.com/workflows/`.
 3. Select a small set of recent, practical updates that help developers learn GitHub
-   faster. Follow Mona's editorial notes, keep summaries short, and include the
-   official source URL for every Blog or Changelog item.
+  faster, including useful Awesome Copilot workflows. Follow Mona's editorial notes,
+  keep summaries short, and include the official source URL for every Blog, Changelog,
+  or Awesome Copilot workflow item.
 4. Update only `site/content/github-info.md`. Preserve its existing Markdown
    structure and retain still-relevant material.
 5. When the content changes, use the `create-pull-request` safe output to open a
